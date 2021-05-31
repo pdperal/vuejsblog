@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-wrapper">
+  <div class="blog-wrapper no-user">
     <div class="blog-content">
       <div>
         <h2 v-if="post.welcomeScreen">{{ post.title }}</h2>
@@ -128,7 +128,8 @@ export default {
         height: 100%;
         object-fit: cover;
       }
-    }    
+    }  
+
     &:nth-child(even) {
       .blog-content {
         order: 2;
@@ -138,4 +139,12 @@ export default {
       }
     }
   }
+
+  .no-user:first-child {
+      .blog-content {
+        background-color: #303030;
+        color: #fff;
+      }
+    }
+
 </style>
