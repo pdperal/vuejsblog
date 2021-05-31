@@ -128,14 +128,13 @@ export default {
         height: 100%;
         object-fit: cover;
       }
-
-      &:nth-child(even) {
-        .blog-content {
-          order: 2;
-        }
-        .blog-photo {
-          order: 1;
-        }
+    }    
+    &:nth-child(even) {
+      .blog-content {
+        order: 2;
+      }
+      .blog-photo {
+        order: 1;
       }
     }
   }
